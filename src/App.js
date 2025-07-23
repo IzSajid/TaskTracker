@@ -1,9 +1,9 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Login from "./components/Login";
-import TaskPage from "./components/TaskPage";
-import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./Component/Login";
+import TaskPage from "./Component/TaskPage";
+import ProtectedRoute from "./Component/ProtectedRoute";
 
 function App() {
   return (
