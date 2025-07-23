@@ -38,3 +38,35 @@
 .header-logout-btn:hover {
   background: #e0e7ff;
 }
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    gap: 0.7rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .user-email {
+    font-size: 0.95rem;
+    word-break: break-all;
+    max-width: 60vw;
+  }
+
+  .header-logout-btn {
+    width: auto;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+}
