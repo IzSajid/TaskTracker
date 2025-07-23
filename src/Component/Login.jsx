@@ -19,14 +19,30 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h2>Login</h2>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Enter email"
-      />
-      <button onClick={handleLogin}>Login</button>
+      <form
+        className="login-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleLogin();
+        }}
+      >
+        <h2>Login</h2>
+        <div className="form-group">
+          <label htmlFor="login-email">Email</label>
+          <input
+            id="login-email"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter email"
+            autoComplete="off"
+            required
+          />
+        </div>
+        <button type="submit" className="login-btn">
+          Login
+        </button>
+      </form>
     </div>
   );
 };
